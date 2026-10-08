@@ -374,3 +374,217 @@ footer p {
         padding: 8px;
     }
 }
+/* ==========================================
+   ACTIVITY 3 ADDITIONS
+   ========================================== */
+
+
+/* ==========================================
+   1. PROJECT CARDS
+   ========================================== */
+
+.project-card {
+    background-color: #f8f9fa;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #d5dce3;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+.project-card button {
+    margin: 5px 0 10px;
+}
+
+.project-details {
+    background-color: #e8f1f8;
+    padding: 15px;
+    border-left: 4px solid #1f6f8b;
+    border-radius: 5px;
+}
+
+
+/* ==========================================
+   2. INTERACTIVE PHOTO GALLERY
+   ========================================== */
+
+.gallery-viewer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.gallery-viewer figure {
+    flex: 1;
+    min-width: 0;
+    max-width: 600px;
+    text-align: center;
+}
+
+.gallery-viewer img {
+    display: block;
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.gallery-viewer figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #123c69;
+}
+
+.gallery-viewer button {
+    flex-shrink: 0;
+}
+
+
+/* ==========================================
+   3. CONTACT FORM FEEDBACK AND PREVIEW
+   ========================================== */
+
+#formFeedback {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#formPreview {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #e8f1f8;
+    border: 1px solid #1f6f8b;
+    border-radius: 8px;
+    overflow-wrap: anywhere;
+}
+
+
+/* ==========================================
+   4. DARK THEME
+   ========================================== */
+
+body.dark-theme {
+    background-color: #111827;
+    color: #f3f4f6;
+}
+
+.dark-theme nav {
+    background-color: #080f1c;
+}
+
+.dark-theme .content-section {
+    background-color: #1f2937;
+    color: #f3f4f6;
+}
+
+.dark-theme .content-section h2,
+.dark-theme .content-section h3 {
+    color: #7dd3fc;
+}
+
+.dark-theme .project-card {
+    background-color: #273449;
+    border-color: #526174;
+}
+
+.dark-theme .project-details {
+    background-color: #334155;
+    color: #f3f4f6;
+}
+
+.dark-theme .gallery-viewer figcaption {
+    color: #7dd3fc;
+}
+
+.dark-theme .box-model-demo {
+    background-color: #273449;
+    color: #f3f4f6;
+}
+
+.dark-theme .media-item {
+    background-color: #273449;
+    color: #f3f4f6;
+}
+
+.dark-theme .form-group label {
+    color: #7dd3fc;
+}
+
+.dark-theme .form-group input,
+.dark-theme .form-group textarea {
+    background-color: #273449;
+    color: #f3f4f6;
+    border-color: #64748b;
+}
+
+.dark-theme #formPreview {
+    background-color: #273449;
+    color: #f3f4f6;
+    border-color: #7dd3fc;
+}
+
+.dark-theme .form-note {
+    color: #d1d5db;
+}
+
+.dark-theme caption {
+    color: #7dd3fc;
+}
+
+.dark-theme tr:nth-child(even) {
+    background-color: #273449;
+}
+
+.dark-theme tr:hover {
+    background-color: #334155;
+}
+
+
+/* ==========================================
+   5. HOVER EFFECTS AND KEYBOARD ACCESSIBILITY
+   ========================================== */
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #ffcc00;
+    outline-offset: 3px;
+}
+
+
+/* ==========================================
+   6. ACTIVITY 3 RESPONSIVE DESIGN
+   ========================================== */
+
+@media (max-width: 768px) {
+
+    .gallery-viewer {
+        flex-direction: column;
+    }
+
+    .gallery-viewer figure {
+        width: 100%;
+    }
+
+    .gallery-viewer button {
+        width: 100%;
+    }
+
+    .project-card {
+        padding: 15px;
+    }
+
+}
