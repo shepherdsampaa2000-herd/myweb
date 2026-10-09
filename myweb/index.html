@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shepherd Sampa - Web Technologies</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Connect JavaScript -->
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Welcome to Web Programming</h1>
+        <p>Shepherd Sampa | Computer Science</p>
+
+        <!-- Theme Switch Button -->
+        <button id="themeToggle" type="button" aria-pressed="false">
+            Switch Theme
+        </button>
+    </header>
+
+
+    <!-- NAVIGATION -->
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#hobbies">My Hobbies</a></li>
+            <li><a href="#learning">My Learning Plan</a></li>
+            <li><a href="#photos">My Photos</a></li>
+            <li><a href="#media">My Media</a></li>
+            <li><a href="#projects">Projects / Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- ABOUT ME -->
+        <section id="about" class="content-section">
+
+            <h2>About Me</h2>
+
+            <p>
+                My name is Shepherd Sampa, and I am a second-year Computer Science
+                student interested in learning how technology can be used to solve
+                real-world problems. I am currently learning web technologies and
+                developing my skills in HTML and CSS. I hope to become more confident
+                in creating websites and understanding how they work. I also enjoy
+                learning new computer skills and improving my programming knowledge.
+            </p>
+
+            <div class="box-model-demo">
+                <p>
+                    This section demonstrates the CSS box model using margin,
+                    padding, and a visible border.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- MY HOBBIES -->
+        <section id="hobbies" class="content-section">
+
+            <h2>My Hobbies</h2>
+
+            <ul>
+                <li>Swimming</li>
+                <li>Jogging</li>
+                <li>Gaming</li>
+            </ul>
+
+        </section>
+
+
+        <!-- MY LEARNING PLAN -->
+        <section id="learning" class="content-section">
+
+            <h2>My Learning Plan</h2>
+
+            <h3>Steps I Will Take to Improve My Web Skills</h3>
+
+            <ol>
+                <li>Practice HTML and CSS by creating small web pages.</li>
+                <li>Learn how to use JavaScript to make websites interactive.</li>
+                <li>Build and improve personal web projects regularly.</li>
+            </ol>
+
+            <h3>Weekly Web Learning Plan</h3>
+
+            <table>
+
+                <caption>My Weekly Web Development Practice Plan</caption>
+
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Topic</th>
+                        <th>Practice Task</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>HTML</td>
+                        <td>Practice creating structured web pages.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>CSS</td>
+                        <td>Practice styling and page layouts.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Friday</td>
+                        <td>Web Projects</td>
+                        <td>Build and improve a small website.</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <!-- PROJECTS AND SKILLS -->
+        <section id="projects" class="content-section">
+
+            <h2>My Projects / Skills</h2>
+
+            <!-- PROJECT 1 -->
+            <article class="project-card">
+
+                <h3>Web Development</h3>
+
+                <p>
+                    I have learned HTML and CSS and how to build websites.
+                </p>
+
+                <button
+                    class="details-btn"
+                    type="button"
+                    data-target="project1-details"
+                    aria-expanded="false">
+                    Show Details
+                </button>
+
+                <p id="project1-details" class="project-details" hidden>
+                    I learned how HTML creates the structure of a webpage
+                    and how CSS controls its appearance and layout.
+                </p>
+
+            </article>
+
+
+            <!-- PROJECT 2 -->
+            <article class="project-card">
+
+                <h3>Java Programming</h3>
+
+                <p>
+                    I have learned classes, objects and methods in Java.
+                </p>
+
+                <button
+                    class="details-btn"
+                    type="button"
+                    data-target="project2-details"
+                    aria-expanded="false">
+                    Show Details
+                </button>
+
+                <p id="project2-details" class="project-details" hidden>
+                    I have practiced object-oriented programming and learned
+                    how Java helps us build software.
+                </p>
+
+            </article>
+
+
+            <!-- PROJECT 3 -->
+            <article class="project-card">
+
+                <h3>Computer Vision</h3>
+
+                <p>
+                    I have worked with Python, OpenCV and object detection.
+                </p>
+
+                <button
+                    class="details-btn"
+                    type="button"
+                    data-target="project3-details"
+                    aria-expanded="false">
+                    Show Details
+                </button>
+
+                <p id="project3-details" class="project-details" hidden>
+                    I have explored how computer vision can be used to detect
+                    and track objects in images and videos.
+                </p>
+
+            </article>
+
+        </section>
+
+
+        <!-- INTERACTIVE PHOTO GALLERY -->
+        <section id="photos" class="content-section">
+
+            <h2>My Photos</h2>
+
+            <div class="gallery-viewer">
+
+                <button id="prevPhoto" type="button">
+                    Previous
+                </button>
+
+                <figure>
+
+                    <img
+                        id="galleryImage"
+                        src="images/photo1.jpeg"
+                        alt="Photo showing my first activity">
+
+                    <figcaption id="galleryCaption">
+                        My first photo.
+                    </figcaption>
+
+                </figure>
+
+                <button id="nextPhoto" type="button">
+                    Next
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- MY MEDIA -->
+        <section id="media" class="content-section">
+
+            <h2>My Media</h2>
+
+            <!-- INTRODUCTION VIDEO -->
+            <div class="media-item">
+
+                <h3>My Introduction Video</h3>
+
+                <video controls>
+                    <source src="videos/intro.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+
+                <p>
+                    In this video, I introduce myself, talk about my programme,
+                    and explain one web skill I hope to learn.
+                </p>
+
+            </div>
+
+
+            <!-- AUDIO RECORDING -->
+            <div class="media-item">
+
+                <h3>My Audio Recording</h3>
+
+                <audio controls>
+                    <source src="audio/myaudio.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+
+                <p>
+                    A sample voice recording.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT FORM -->
+        <section id="contact" class="content-section">
+
+            <h2>Contact Me</h2>
+
+            <form id="contactForm">
+
+                <!-- NAME -->
+                <div class="form-group">
+
+                    <label for="name">Name:</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required>
+
+                </div>
+
+
+                <!-- EMAIL -->
+                <div class="form-group">
+
+                    <label for="email">Email:</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required>
+
+                </div>
+
+
+                
+                <div class="form-group">
+
+                    <label for="topic">Topic:</label>
+
+                    <input
+                        type="text"
+                        id="topic"
+                        name="topic">
+
+                </div>
+
+
+                <!-- MESSAGE -->
+                <div class="form-group">
+
+                    <label for="message">Message:</label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        required></textarea>
+
+                </div>
+
+
+                <!-- SUBMIT BUTTON -->
+                <button type="submit">
+                    Validate &amp; Preview
+                </button>
+
+
+                <!-- VALIDATION FEEDBACK -->
+                <p id="formFeedback" aria-live="polite"></p>
+
+
+                <!-- FORM PREVIEW -->
+                <div id="formPreview"></div>
+
+            </form>
+
+
+            <p class="form-note">
+                This form is for demonstration purposes only and for class worrk.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Shepherd Sampa. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
